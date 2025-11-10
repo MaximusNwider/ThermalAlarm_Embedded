@@ -1,3 +1,11 @@
+
+
+# Progress as of Nov10:  
+  uart0 driver **complete but not ideal**
+  gpio driver **near complete**
+  adc driver **50%**
+  dac driver **TODO**
+  sysctl handler **complete**
 # Embedded Thermal Alarm System
 
 ## Project Hierarchy Description
