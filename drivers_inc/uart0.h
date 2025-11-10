@@ -38,21 +38,21 @@
 */
 
 
-#define HWREG(x)( * (volatile uint32_t * )(x))
+#define X(x)( * (volatile uint32_t * )(x))
 
-#define SYSCTL_RCGCUART HWREG       (0x400FE618)
-#define SYSCTL_RCGCGPIO HWREG       (0x400FE608)
+#define SYSCTL_RCGCUART X       (0x400FE618)
+#define SYSCTL_RCGCGPIO X       (0x400FE608)
 
-#define GPIO_PORTA_AFSEL HWREG      (0x40004420)
-#define GPIO_PORTA_DEN HWREG        (0x4000451C)
-#define GPIO_PORTA_PCTL HWREG       (0x4000452C)
-#define UART0_DR HWREG              (0x4000C000)
-#define UART0_FR HWREG              (0x4000C018)
-#define UART0_IBRD HWREG            (0x4000C024)
-#define UART0_FBRD HWREG            (0x4000C028)
-#define UART0_LCRH HWREG            (0x4000C02C)
-#define UART0_CTL HWREG             (0x4000C030)
-#define UART0_CC HWREG              (0x4000CFC8)
+#define GPIO_PORTA_AFSEL X      (0x40004420)
+#define GPIO_PORTA_DEN X        (0x4000451C)
+#define GPIO_PORTA_PCTL X       (0x4000452C)
+#define UART0_DR X              (0x4000C000)
+#define UART0_FR X              (0x4000C018)
+#define UART0_IBRD X            (0x4000C024)
+#define UART0_FBRD X            (0x4000C028)
+#define UART0_LCRH X            (0x4000C02C)
+#define UART0_CTL X             (0x4000C030)
+#define UART0_CC X              (0x4000CFC8)
 
 void uart0_init_115200();
 void uart0_putc(char c);
