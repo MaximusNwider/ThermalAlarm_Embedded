@@ -41,7 +41,6 @@ void uart0_init_115200() {
   GPIO_PORTA_DEN |= S_BIT | (1 << 1);
   //Kill any bit previously set, and ensure only last 2 bits are set for UART ctrl
   GPIO_PORTA_PCTL |= ~(GPIO_PORTA_PCTL &= (0xFF)) | D_PORT;
-
   /*
   TheUARTCTLregistershouldnotbechangedwhiletheUARTisenabledorelsetheresults are unpredictable.
   Thefollowingsequenceisrecommendedformakingchangestothe UARTCTLregister.
@@ -52,7 +51,6 @@ void uart0_init_115200() {
    4. Reprogramthecontrolregister.
    5. EnabletheUART.
   */
-
   //Ensure UArt module is disabled 
   UART0_CTL &= ~D_PORT;
   //TODO: ensure waiting to end of trans/receipt

@@ -1,8 +1,11 @@
 
 //Maximus "Dumbass" Nwider
 
-#ifndef __UART0_H__
-#define __UART0_H__
+#pragma once
+
+
+//#ifndef __UART0_H__
+//#define __UART0_H__
 
 /*
 #define GPIO_PORTA_DATA_BITS_R  ((volatile unsigned long *)0x40004000)
@@ -54,9 +57,12 @@
 #define UART0_CTL X             (0x4000C030)
 #define UART0_CC X              (0x4000CFC8)
 
+
+
+
 void uart0_init_115200();
 void uart0_putc(char c);
 void uart0_write(const char * s);
 void uart0_write_int(int v);
 
-#endif
+//#endif
